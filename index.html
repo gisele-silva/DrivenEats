@@ -11,116 +11,135 @@
 </head>
 
 <body>
-    <div class="mobile">
-        <div class="topo">
-            <h1 class='titulo'>DrivenEats</h1>
-            <h2 class='subtitulo'>Sua comida em 6 minutos</h2>
+
+    <div class="qualquer desaparece">
+        <div class="encerrarPedido">
+            <div class="quadroVerde">
+                <div class="confirmar">Confirme seu pedido</div>
+                <div class="food">
+                    <div class="eat"></div>
+                    <div class="precoEat"></div>
+                </div>
+                <div class="food">
+                    <div class="drink"></div>
+                    <div class="precoDrink"></div>
+                </div>
+                <div class="food">
+                    <div class="sweet"></div>
+                    <div class="precoSweet"></div>
+                </div>
+                <div class="food">
+                    <div>TOTAL</div>
+                    <div class="precoFinal"></div>
+                </div>
+                <div class="tudoCerto" onclick="pedirNoWhats()">Tudo certo, pode pedir!</div>
+                <div class="confirmar" onclick="voltarAoMenu ()">Cancelar</div>
+            </div>
         </div>
+    </div>
+
+    </div>
+    <div class="topo">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="container">
         <div class="divisao"></div>
-        <div class="container">
-            <h1 class='escolha'>Primeiro, seu prato</h1>
-            <div class="comida">
-                <div class="prato">
-                    <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_413580649.jpg?w=1200"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Frango Yin Yang</h2>
-                    <h3 class='descricaoDoPrato'>Um pouco de batata, um pouco de salada</h3>
-                    <div class="preco">R$ 14,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_413580649.jpg?w=1200"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Frango Yin Yang</h2>
-                    <h3 class='descricaoDoPrato'>Um pouco de batata, um pouco de salada</h3>
-                    <div class="preco">R$ 14,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_413580649.jpg?w=1200"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Frango Yin Yang</h2>
-                    <h3 class='descricaoDoPrato'>Um pouco de batata, um pouco de salada</h3>
-                    <div class="preco">R$ 14,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_413580649.jpg?w=1200"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Frango Yin Yang</h2>
-                    <h3 class='descricaoDoPrato'>Um pouco de batata, um pouco de salada</h3>
-                    <div class="preco">R$ 14,90</div>
-                </div>
+        <h3>Primeiro, seu prato</h3>
+        <div class="escolha">
+            <div class="prato" onclick="clicouComida(this)">
+                <img src="/img/risoto.jpg">
+                <div class="nomeDoPrato">Risto P</div>
+                <div class="descricaoDoPrato">Frango e Salada</div>
+                <div class="preco">R$ 15,90</div>
             </div>
-            <h1 class='escolha'>Agora, sua bebida</h1>
-            <div class="comida">
-                <div class="prato">
-                    <img src="https://www.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/9/1924427.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Coca-Cola</h2>
-                    <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
-                    <div class="preco">R$ 5,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://www.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/9/1924427.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Coca-Cola</h2>
-                    <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
-                    <div class="preco">R$ 5,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://www.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/9/1924427.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Coca-Cola</h2>
-                    <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
-                    <div class="preco">R$ 5,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://www.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/9/1924427.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Coca-Cola</h2>
-                    <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
-                    <div class="preco">R$ 5,90</div>
-                </div>
+            <div class="prato" onclick="clicouComida(this)">
+                <img src="/img/risoto.jpg">
+                <div class="nomeDoPrato">Risto M</div>
+                <div class="descricaoDoPrato">Frango e Salada</div>
+                <div class="preco">R$ 16,90</div>
             </div>
-            <h1 class='escolha'>Por fim, sua sobremesa</h1>
-            <div class="comida">
-                <div class="prato">
-                    <img src="https://vivareceita-cdn.s3.amazonaws.com/uploads/2021/05/Aprenda-como-fazer-pudim-de-leite-simples.-Fonte-Broma-Bakery-500x500.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Pudim</h2>
-                    <h3 class='descricaoDoPrato'>Pudim de Leite</h3>
-                    <div class="preco">R$ 7,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://vivareceita-cdn.s3.amazonaws.com/uploads/2021/05/Aprenda-como-fazer-pudim-de-leite-simples.-Fonte-Broma-Bakery-500x500.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Pudim</h2>
-                    <h3 class='descricaoDoPrato'>Pudim de Leite</h3>
-                    <div class="preco">R$ 7,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://vivareceita-cdn.s3.amazonaws.com/uploads/2021/05/Aprenda-como-fazer-pudim-de-leite-simples.-Fonte-Broma-Bakery-500x500.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Pudim</h2>
-                    <h3 class='descricaoDoPrato'>Pudim de Leite</h3>
-                    <div class="preco">R$ 7,90</div>
-                </div>
-                <div class="prato">
-                    <img src="https://vivareceita-cdn.s3.amazonaws.com/uploads/2021/05/Aprenda-como-fazer-pudim-de-leite-simples.-Fonte-Broma-Bakery-500x500.jpg"
-                        alt="">
-                    <h2 class='nomeDoPrato'>Pudim</h2>
-                    <h3 class='descricaoDoPrato'>Pudim de Leite</h3>
-                    <div class="preco">R$ 7,90</div>
-                </div>
+            <div class="prato" onclick="clicouComida(this)">
+                <img src="/img/risoto.jpg">
+                <div class="nomeDoPrato">Risto G</div>
+                <div class="descricaoDoPrato">Frango e Salada</div>
+                <div class="preco">R$ 17,90</div>
+            </div>
+            <div class="prato" onclick="clicouComida(this)">
+                <img src="/img/risoto.jpg">
+                <div class="nomeDoPrato">Risto XG</div>
+                <div class="descricaoDoPrato">Frango e Salada</div>
+                <div class="preco">R$ 18,90</div>
+            </div>
+        </div>
+
+        <h3>Agora, sua bebida</h3>
+
+        <div class="escolha">
+            <div class="prato" onclick="clicouBebida(this)">
+                <img src="/img/coca-cola.jpg">
+                <h2 class='nomeDoPrato'>Coca-Cola P</h2>
+                <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
+                <div class="preco">R$ 5,90</div>
+            </div>
+            <div class="prato" onclick="clicouBebida(this)">
+                <img src="/img/coca-cola.jpg">
+                <h2 class='nomeDoPrato'>Coca-Cola M</h2>
+                <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
+                <div class="preco">R$ 6,90</div>
+            </div>
+            <div class="prato" onclick="clicouBebida(this)">
+                <img src="/img/coca-cola.jpg">
+                <h2 class='nomeDoPrato'>Coca-Cola G</h2>
+                <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
+                <div class="preco">R$ 7,90</div>
+            </div>
+            <div class="prato" onclick="clicouBebida(this)">
+                <img src="/img/coca-cola.jpg">
+                <h2 class='nomeDoPrato'>Coca-Cola XG</h2>
+                <h3 class='descricaoDoPrato'>Refrigerante de cola</h3>
+                <div class="preco">R$ 8,90</div>
+            </div>
+        </div>
+
+        <h3>Por fim, sua sobremesa</h3>
+        <div class="escolha">
+            <div class="prato" onclick="clicouSobremesa(this)">
+                <img src="/img/pudim.jpg" alt="">
+                <h2 class='nomeDoPrato'>Pudim P</h2>
+                <h3 class='descricaoDoPrato'>Pudim de Leite</h3>
+                <div class="preco">R$ 7,90</div>
+            </div>
+            <div class="prato" onclick="clicouSobremesa(this)">
+                <img src="/img/pudim.jpg" alt="">
+                <h2 class='nomeDoPrato'>Pudim</h2>
+                <h3 class='descricaoDoPrato'>Pudim de Leite M</h3>
+                <div class="preco">R$ 8,90</div>
+            </div>
+            <div class="prato" onclick="clicouSobremesa(this)">
+                <img src="/img/pudim.jpg" alt="">
+                <h2 class='nomeDoPrato'>Pudim</h2>
+                <h3 class='descricaoDoPrato'>Pudim de Leite G</h3>
+                <div class="preco">R$ 9,90</div>
+            </div>
+            <div class="prato" onclick="clicouSobremesa(this)">
+                <img src="/img/pudim.jpg" alt="">
+                <h2 class='nomeDoPrato'>Pudim</h2>
+                <h3 class='descricaoDoPrato'>Pudim de Leite XG</h3>
+                <div class="preco">R$ 10,90</div>
             </div>
         </div>
         <div class="divisao"></div>
         <div class="rodape">
-            <div class="quadro">
-                <h2 class='textoDePagar'>Selecione os 3 itens</h5>
-                <h2 class='textoDePagar'>para fechar o pedido</h5>
+            <div class="pedidoAberto">
+                <h4>Selecione os 3 itens para fechar o pedido</h4>
             </div>
-            
+            <div class="pedidoFechado desaparece" onclick="fecharPedido()">
+                <h4>Finalizar pedido</h4>
+            </div>
         </div>
     </div>
+
     <script src="scripts.js"></script>
 </body>
 
